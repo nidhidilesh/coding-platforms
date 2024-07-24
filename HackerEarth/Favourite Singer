@@ -1,0 +1,29 @@
+import java.util.*;
+
+class TestClass {
+    public static void main(String args[] ) throws Exception {
+        Scanner sc = new Scanner(System.in);
+        
+        long N = sc.nextLong();
+        long[] singers = new long[(int)N];
+        for(int i = 0;i<N;i++)
+        {
+            singers[i]=sc.nextLong();
+        }
+        long maxCount = 0;
+        HashMap<Long,Long> hashMap = new HashMap<>();
+        for(long singer:singers){
+            long singerCount = hashMap.getOrDefault(singer,0L)+1;
+            hashMap.put(singer,singerCount);
+            if(singerCount>maxCount)maxCount=singerCount;
+        }
+        int favoriteSingersCount=0;
+        for(long count : hashMap.values()){
+            if(count==maxCount){
+                favoriteSingersCount++;
+            }
+        }
+        System.out.println(favoriteSingersCount);
+        sc.close();
+    }
+}
