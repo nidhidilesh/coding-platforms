@@ -1,0 +1,21 @@
+import java.util.*;
+
+class TestClass {
+    public static void main(String args[] ) throws Exception {
+        Scanner sc = new Scanner(System.in);
+        String s = sc.next();
+        char[] array = s.toLowerCase().toCharArray();
+        int x = 0;
+        int y = 0;
+        for(int i = 0;i<array.length;i++){
+            if(array[i]=='z'){
+                x++;
+            }
+            else if(array[i]=='o'){
+                y++;
+            }
+        }
+        String result = (2*x==y)?"Yes":"No";
+        System.out.println(result);
+    }
+}
