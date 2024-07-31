@@ -1,0 +1,27 @@
+import java.util.*;
+
+class TestClass {
+    public static void main(String args[] ) throws Exception {
+        Scanner sc = new Scanner(System.in);
+        int N = sc.nextInt();
+        boolean possible = true;
+        char[] array = sc.next().toCharArray();
+        for(int i = 0;i<N-1;i++){
+            if(array[i]=='H' && array[i]==array[i+1]){
+                possible = false;
+            }
+        }
+        if(possible){
+            System.out.println("YES");
+            for(char c : array){
+                if(c=='.'){
+                    c='B';
+                }
+                System.out.print(c);
+            }
+        }
+        else{
+            System.out.println("NO");
+        }
+    }
+}
