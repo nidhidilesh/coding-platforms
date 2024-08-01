@@ -1,0 +1,32 @@
+import java.util.*;
+
+class TestClass {
+    public static void main(String args[] ) throws Exception {
+        Scanner sc = new Scanner(System.in);
+        int T = sc.nextInt();
+        int gCost = 0;
+        int pCost = 0;
+        int n = 0;
+        int x = 0;
+        int y = 0;
+        int xScan = 0;
+        int yScan = 0;
+        for(int i =0;i<T;i++){
+            gCost = Integer.parseInt(sc.next());
+            pCost = Integer.parseInt(sc.next());
+            x = 0;
+            y = 0;
+            n = sc.nextInt();
+            for(int j = 0;j<n;j++){
+                xScan=Integer.parseInt(sc.next());
+                yScan=Integer.parseInt(sc.next());
+                if(xScan>0)x+=1;
+                if(yScan>0)y+=1;
+            }
+            int total1 = (x*gCost)+(y*pCost);
+            int total2 = (y*gCost)+(x*pCost);
+            int total = total2>total1?total1:total2;
+            System.out.println(total);
+        }
+    }
+}
