@@ -1,0 +1,23 @@
+import java.util.*;
+
+class TestClass {
+    public static void main(String args[] ) throws Exception {
+        Scanner sc = new Scanner(System.in);
+        String input = sc.next();
+        char letter = input.charAt(2);
+        boolean valid = true;
+        boolean isVowel = letter=='A' || letter=='E' || letter=='I'
+        || letter=='O' || letter=='U' || letter=='Y';
+        //if any vowel is found, valid = false
+        if(isVowel){
+            valid = false;
+        }
+        //loop through the string 
+        //skip the calculation if index is 2 or 6(non digit)
+        for(int i=0;i<input.length()-1;i++){
+            if(i==2 || i+1==2 || i==6 || i+1==6 )continue;
+            else if((Character.getNumericValue(input.charAt(i))+Character.getNumericValue(input.charAt(i+1)))%2!=0)valid=false;
+        }
+        System.out.println(valid==true?"valid":"invalid");
+    }
+}
