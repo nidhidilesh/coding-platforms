@@ -12,7 +12,22 @@ class Item {
 		this.weight = y;
 	}
 }
+class ProfitComparator implements Comparator<Item> {
 
+	@Override
+	public int compare(Item arg0, Item arg1) {
+		double r1 = (double)arg0.value/arg0.weight;
+		double r2 = (double)arg1.value/arg1.weight;
+		if(r1>r2) {
+			return -1;
+		}
+		else if(r1<r2) {
+			return 1;
+		}
+		return 0;
+	}
+
+}
 public class Knapsack {
 
 	public static void main(String[] args) throws IOException {
