@@ -22,7 +22,7 @@ public class QuickSort {
 	private static void quicksort(int[] arr, int lowIndex, int highIndex) {
 		int pivot = highIndex;
 		highIndex--;
-		if(lowIndex>=highIndex) {
+		if(lowIndex>highIndex) {
 			return;
 		}
 		while(lowIndex < highIndex) {
