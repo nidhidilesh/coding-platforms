@@ -3,7 +3,7 @@ import java.io.*;
 import java.lang.*;
 import java.util.*;
 
-class gfg {
+class RoofTop {
 
     public static void main(String args[]) throws IOException {
         BufferedReader read = new BufferedReader(new InputStreamReader(System.in));
@@ -25,7 +25,7 @@ class gfg {
 
 
 
-class RoofTop {
+class Solution {
     // Function to find maximum number of consecutive steps
     // to gain an increase in altitude with each step.
     public int maxStep(int arr[]) {

@@ -5,7 +5,7 @@ import java.io.*;
 import java.lang.*;
 import java.util.*;
 
-class Driver {
+class ReverseString {
     public static void main(String args[]) throws IOException {
         BufferedReader read = new BufferedReader(new InputStreamReader(System.in));
         int t = Integer.parseInt(read.readLine());
@@ -21,7 +21,7 @@ class Driver {
 
 // User function Template for Java
 
-class ReverseString {
+class Reverse {
     // Complete the function
     // str: input string
     public static String reverseString(String s) {

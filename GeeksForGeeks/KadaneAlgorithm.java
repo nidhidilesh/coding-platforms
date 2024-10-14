@@ -3,7 +3,7 @@
 import java.io.*;
 import java.util.*;
 
-class Main {
+class KadaneAlgorithm {
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -37,7 +37,7 @@ class Main {
 
 
 // User function Template for Java
-class KadaneAlgorithm{
+class Solution{
 
     // arr: input array
     // Function to find the sum of contiguous subarray with maximum sum.

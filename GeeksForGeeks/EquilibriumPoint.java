@@ -3,7 +3,7 @@
 import java.io.*;
 import java.util.*;
 
-class Main {
+class EquilibriumPoint {
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -36,7 +36,7 @@ class Main {
 // } Driver Code Ends
 
 
-class EquilibriumPoint {
+class Solution {
     // arr: input array
     // Function to find equilibrium point in the array.
     public static int equilibriumPoint(long arr[]) {

@@ -4,7 +4,7 @@
 import java.io.*;
 import java.util.*;
 
-class GFG {
+class MissingArray {
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -26,7 +26,7 @@ class GFG {
 
 
 // User function Template for Java
-class MissingArray {
+class Solution {
 
     // Note that the size of the array is n-1
     int missingNumber(int n, int arr[]) {

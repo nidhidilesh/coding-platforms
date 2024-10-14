@@ -40,7 +40,7 @@ class PeakElement{
 	}
 }
 // } Driver Code Ends
-class PeakElement
+class Solution
 {
 	// Function to find the peak element
 	// arr[]: input array

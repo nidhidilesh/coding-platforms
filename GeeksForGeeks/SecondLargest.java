@@ -4,7 +4,7 @@ import java.io.*;
 import java.util.*;
 import java.util.stream.Collectors;
 
-public class Main {
+public class SecondLargest {
 
     public static void main(String[] args) throws Exception {
         Scanner sc = new Scanner(System.in);
@@ -24,7 +24,7 @@ public class Main {
 
 // User function Template for Java
 
-class SecondLargest{
+class Solution{
     public int print2largest(int[] arr) {
         // Code Here
         int l = arr.length;

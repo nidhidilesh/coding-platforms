@@ -1,7 +1,7 @@
 //{ Driver Code Starts
 import java.util.*;
 import java.io.*;
-class PeakElement{
+class PeakElementOlogn{
 	public static void main(String[] args)throws IOException{
         BufferedReader in=new BufferedReader(new InputStreamReader(System.in));
         PrintWriter out=new PrintWriter(System.out);
@@ -40,7 +40,7 @@ class PeakElement{
 	}
 }
 // } Driver Code Ends
-class PeakElementOlogn
+class Solution
 {
 	// Function to find the peak element
 	// arr[]: input array

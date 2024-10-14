@@ -22,7 +22,7 @@ class IntArray {
     }
 }
 
-class GFG {
+class ArrayDuplicates {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int t;
@@ -46,7 +46,7 @@ class GFG {
 
 
 
-class ArrayDuplicates{
+class Solution{
     public static ArrayList<Integer> duplicates(int[] arr) {
         // code here
         int l = arr.length;

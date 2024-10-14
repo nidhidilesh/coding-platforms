@@ -6,7 +6,7 @@
 import java.io.*;
 import java.util.*;
 
-class GFG {
+class KthSmallest {
     public static void main(String args[]) throws IOException {
         BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
         PrintWriter out = new PrintWriter(System.out);
@@ -41,12 +41,13 @@ class GFG {
 
 // User function Template for Java
 
-class KthSmallest {
+class Solution {
     public static int kthSmallest(int[] arr, int k) {
         // Your code here
         int left = 0;
         int l = arr.length;
         int mid = 0;
+        int pivot = l-1;
         quicksearch(arr, left, pivot, k);
 		return arr[k-1];
     }

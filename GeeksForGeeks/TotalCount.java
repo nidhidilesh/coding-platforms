@@ -8,7 +8,7 @@ import java.util.*;
 // } Driver Code Ends
 // User function Template for Java
 
-class totalCount {
+class Solution {
     int totalCount(int k, int[] arr) {
         // code here
         int l = arr.length;
@@ -27,7 +27,7 @@ class totalCount {
 
 //{ Driver Code Starts.
 
-class GFG {
+class TotalCount {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int t = Integer.parseInt(br.readLine());

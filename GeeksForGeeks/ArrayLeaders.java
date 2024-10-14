@@ -3,7 +3,7 @@ import java.io.*;
 import java.util.*;
 import java.util.stream.*;
 
-class Array {
+class ArrayLeaders {
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -43,7 +43,7 @@ class Array {
 // } Driver Code Ends
 
 
-class ArrayLeaders{
+class Solution{
     // Function to find the leaders in the array.
     static ArrayList<Integer> leaders(int n, int arr[]) {
         // Your code here
