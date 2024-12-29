@@ -19,7 +19,7 @@ class Solution {
         //newStart will be the start for the next loop
         int newStart = start+k;
         //end will be calculated based on start and a check will be made to see if it is less than the array length
-        int end = (start+k-1>l-1) ? l-1 : (start+k-1);
+        int end = Math.min(start+k-1, l-1); 
         while(loop>0){
             while(start<end){
                 swap(start,end, arr);
